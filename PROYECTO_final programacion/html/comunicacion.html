@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunicación Médico-Paciente</title>
+  <link rel="stylesheet" href="../css/comunicacion.css">
+  <script src="../js/comunicacion.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Comunicación entre Pacientes y Personal Médico</h1>
+    <form>
+      <div class="form-group">
+        <label for="message-id">ID de Mensaje:</label>
+        <input type="text" id="message-id" name="message-id" value="MSG-2024-001" disabled>
+      </div>
+      <div class="form-group">
+        <label for="sender">Remitente:</label>
+        <input type="text" id="sender" name="sender" placeholder="Nombre del remitente" required>
+      </div>
+      <div class="form-group">
+        <label for="receiver">Destinatario:</label>
+        <input type="text" id="receiver" name="receiver" placeholder="Nombre del destinatario" required>
+      </div>
+      <div class="form-group">
+        <label for="datetime">Fecha y Hora:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required>
+      </div>
+      <div class="form-group">
+        <label for="message-content">Mensaje:</label>
+        <textarea id="message-content" name="message-content" rows="2" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="status">Estado:</label>
+        <select id="status" name="status" required>
+          <option value="unread">No leído</option>
+          <option value="read">Leído</option>
+        </select>
+      </div>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </div>
+</body>
+</html>

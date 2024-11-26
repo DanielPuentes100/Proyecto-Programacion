@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Médico - Facturación</title>
+    <link rel="stylesheet" href="../css/facturacion.css">
+    <script src="../js/facturacion.js"></script>
+</head>
+<body>
+    <h2>Facturación y Gestión de Pagos</h2>
+    <div class="content-wrapper">
+        <form class="invoice-form">
+            <div class="form-grid">
+                <div class="input-group">
+                    <label class="required">ID Factura</label>
+                    <input type="text" id="id_factura" readonly value="Se genera automaticamente" class="input-control">
+                </div>
+
+                <div class="input-group">
+                    <label class="required">Monto a Pagar</label>
+                    <input type="number" id="monto" step="0.01" class="input-control" required>
+                </div>
+
+                <div class="input-group">
+                    <label class="required">Fecha de Emisión</label>
+                    <input type="date" id="fecha_emision" class="input-control" readonly>
+                </div>
+
+                <div class="input-group">
+                    <label class="required">Método de Pago</label>
+                    <select id="metodo_pago" class="input-control" required>
+                        <option value="">Seleccionar método</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="transferencia">Transferencia</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label class="required">Estado de Pago</label>
+                    <select id="estado_pago" class="input-control" required>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="pagado">Pagado</option>
+                        <option value="anulado">Anulado</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label class="required">Concepto del Servicio</label>
+                    <input type="text" id="concepto" class="input-control" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Descuento (%)</label>
+                    <input type="number" id="descuento" min="0" max="100" class="input-control">
+                </div>
+
+                <div class="input-group">
+                    <label>Fecha de Vencimiento</label>
+                    <input type="date" id="fecha_vencimiento" class="input-control" readonly>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Generar Factura</button>
+                <button type="button" class="btn-secondary">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

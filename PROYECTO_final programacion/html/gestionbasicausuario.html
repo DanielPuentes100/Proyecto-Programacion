@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Usuarios</title>
+  <link rel="stylesheet" href="../css/gestionbasicausuario.css">
+  <script src="../js/gestionbasicausuario.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión Básica de Usuarios</h1>
+    <form>
+      <div class="form-group">
+        <label for="user-id">ID de Usuario:</label>
+        <input type="text" id="user-id" name="user-id" value="USR-2024-001" disabled>
+      </div>
+      <div class="form-group">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" placeholder="Ingresa nombre de usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirmar Contraseña:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar contraseña" required>
+      </div>
+      <div class="form-group">
+        <label for="role">Rol de Usuario:</label>
+        <select id="role" name="role" required>
+          <option value="personal-medico">Personal Médico</option>
+          <option value="paciente">Paciente</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="status">Estado de Cuenta:</label>
+        <select id="status" name="status" required>
+          <option value="activa">Activa</option>
+          <option value="inactiva">Inactiva</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="creation-date">Fecha de Creación:</label>
+        <input type="datetime-local" id="creation-date" name="creation-date" disabled>
+      </div>
+      <button type="submit">Registrar Usuario</button>
+    </form>
+  </div>
+</body>
+</html>

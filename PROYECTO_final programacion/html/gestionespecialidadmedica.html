@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Especialidades Médicas</title>
+    <link rel="stylesheet" href="../css/especialidades.css">
+    <script src="../js/gestionespecialidadmedica.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Especialidades Médicas</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="id_especialidad">Identificación de Especialidad</label>
+                <input type="text" id="id_especialidad" name="id_especialidad" placeholder="Se generará automáticamente" readonly>
+            </div>
+            <div class="form-group">
+                <label for="nombre_especialidad">Nombre de la Especialidad</label>
+                <input type="text" id="nombre_especialidad" name="nombre_especialidad" required placeholder="Ej. Cardiología, Pediatría">
+            </div>
+            <div class="form-group">
+                <label for="descripcion_especialidad">Descripción de la Especialidad</label>
+                <textarea id="descripcion_especialidad" name="descripcion_especialidad" placeholder="Descripción opcional"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="estado_especialidad">Estado de la Especialidad</label>
+                <select id="estado_especialidad" name="estado_especialidad" required>
+                    <option value="activa">Activa</option>
+                    <option value="inactiva">Inactiva</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fecha_creacion">Fecha de Creación</label>
+                <input type="text" id="fecha_creacion" name="fecha_creacion" placeholder="Se generará automáticamente" readonly>
+            </div>
+            <div class="button-group">
+                <button type="submit">Registrar Especialidad</button>
+                <button type="button" class="consultar">Consultar</button>
+                <button type="button" class="actualizar">Actualizar</button>
+                <button type="button" class="eliminar">Eliminar</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

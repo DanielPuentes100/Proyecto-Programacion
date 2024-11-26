@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas Médicas y Consultas</title>
+    <link rel="stylesheet" href="../css/gestioncitasconsultas.css">
+    <script src="../js/citasyconsultas.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="../html/seguimientomedico.html" class="nav-link">Historiales Médicos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Gestión de Citas y Consultas</h2>
+            <form id="appointmentForm" class="medical-form">
+                <div class="form-group" id="consultasPacienteGroup" style="display: none;">
+                    <label>Consultas del Paciente</label>
+                    <select id="consultasPaciente" class="form-control">
+                        <option value="">Seleccione una consulta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="required">Identificación de Cita</label>
+                    <input type="text" id="id_cita" readonly value="Se generará automaticamente" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Fecha y Hora de la Cita</label>
+                    <input type="datetime-local" id="fecha_hora" required class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Especialidad Médica</label>
+                    <select id="especialidad" required class="form-control">
+                        <option value="">Seleccione especialidad</option>
+                        <!-- Las opciones se llenarán con JavaScript más tarde -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Identificación del Médico</label>
+                    <select id="medico" required class="form-control">
+                        <option value="">Seleccione médico</option>
+                        <!-- Las opciones se llenarán con JavaScript más tarde -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Estado de la Cita</label>
+                    <select id="estado" required class="form-control">
+                        <option value="programada">Programada</option>
+                        <option value="completada">Completada</option>
+                        <option value="cancelada">Cancelada</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Motivo de la Consulta</label>
+                    <textarea id="motivo" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Diagnóstico</label>
+                    <textarea id="diagnostico" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Tratamiento</label>
+                    <textarea id="tratamiento" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+</html>

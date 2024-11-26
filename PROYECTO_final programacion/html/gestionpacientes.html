@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pacientes</title>
+    <link rel="stylesheet" href="../css/gestionpaciente.css">
+    <script src="../js/gestionpaciente.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Pacientes</h1>
+        <form id="pacienteForm">
+            <div class="form-group">
+                <label for="Nombre">Nombre completo</label>
+                <input type="text" id="Nombre" name="nombre" required placeholder="Ingrese el nombre completo">
+            </div>
+            <div class="form-group">
+                <label for="Identificacion">Número de identificación</label>
+                <input type="text" id="Identificacion" name="identificacion" required placeholder="Ingrese el número de identificación">
+            </div>
+            <div class="form-group">
+                <label for="Nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="Nacimiento" name="nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="Direccion">Dirección</label>
+                <input type="text" id="Direccion" name="direccion" placeholder="Ingrese la dirección">
+            </div>
+            <div class="form-group">
+                <label for="Telefono">Teléfono de contacto</label>
+                <input type="tel" id="Telefono" name="telefono" required placeholder="Ingrese el teléfono">
+            </div>
+            <div class="form-group">
+                <label for="Correo">Correo electrónico</label>
+                <input type="email" id="Correo" name="correo" placeholder="Ingrese el correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="Estado">Estado del perfil</label>
+                <select id="Estado" name="estado">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Usuario">Usuario</label>
+                <input type="text" id="Usuario" name="usuario" required placeholder="Ingrese el usuario">
+            </div>
+            <div class="form-group">
+                <label for="Contrasena">Contraseña</label>
+                <input type="password" id="Contrasena" name="contrasena" required placeholder="Ingrese la contraseña">
+            </div>
+            <div class="form-group">
+                <label for="ConfirmarContrasena">Confirmar contraseña</label>
+                <input type="password" id="ConfirmarContrasena" name="confirmar_contrasena" required placeholder="Confirme la contraseña">
+            </div>
+            <div class="button-group">
+                <button type="submit">Registrar</button>
+                <button type="button" id="consultarBtn">Consultar</button>
+                <button type="button" id="actualizarBtn">Actualizar</button>
+                <button type="button" id="eliminarBtn">Eliminar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

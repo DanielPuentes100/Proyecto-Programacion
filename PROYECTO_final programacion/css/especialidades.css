@@ -1,0 +1,80 @@
+/* especialidades.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #c5e1a5, #aed581);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h1 {
+    grid-column: span 2;
+    color: #33691e;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #558b2f;
+    margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border: 1px solid #c5e1a5;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #33691e;
+    box-shadow: 0 0 5px rgba(51, 105, 30, 0.5);
+    outline: none;
+}
+
+button {
+    grid-column: span 2;
+    background-color: #558b2f;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #33691e;
+}
+
+button:active {
+    transform: scale(0.95);
+}

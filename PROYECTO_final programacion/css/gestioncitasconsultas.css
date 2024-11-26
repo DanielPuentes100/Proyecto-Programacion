@@ -1,0 +1,277 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #001219;
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+.header {
+    background-color: #005f73;
+    color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #0a9396;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Tarjeta */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Encabezados */
+h2 {
+    color: #005f73;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #94d2bd;
+}
+
+/* Formularios */
+.medical-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: 500;
+    color: #001219;
+}
+
+.required::after {
+    content: " *";
+    color: #ae2012;
+}
+
+.form-control {
+    padding: 0.75rem;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #005f73;
+    box-shadow: 0 0 0 2px rgba(0, 95, 115, 0.1);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botones */
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background-color: #005f73;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0a9396;
+}
+
+.btn-secondary {
+    background-color: #94d2bd;
+    color: #001219;
+}
+
+.btn-secondary:hover {
+    background-color: #7fbfac;
+}
+
+/* Subida de archivos */
+.file-upload {
+    border: 2px dashed #dadce0;
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.form-control-file {
+    width: 100%;
+}
+
+.file-help {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #005f73;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+/* Estados de los elementos */
+input:disabled,
+select:disabled,
+textarea:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+/* Mensajes de validación */
+.validation-message {
+    color: #ae2012;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Status de las citas */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-scheduled {
+    background-color: #e9d8a6;
+    color: #001219;
+}
+
+.status-completed {
+    background-color: #2d6a4f;
+    color: #ffffff;
+}
+
+.status-cancelled {
+    background-color: #ae2012;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+}
+
+/* Mejoras de accesibilidad */
+.form-control:focus-visible {
+    outline: 2px solid #005f73;
+    outline-offset: 1px;
+}
+
+/* Animaciones suaves */
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Estilos para tablas en caso de necesitarlas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #dadce0;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #005f73;
+    font-weight: 500;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}

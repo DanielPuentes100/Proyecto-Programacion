@@ -1,0 +1,86 @@
+/* Estilo hospitalario moderno */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef5f9; /* Fondo azul claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #ffffff; /* Fondo blanco del formulario */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #cce4ed; /* Borde azul claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #0077b6; /* Azul profesional */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #005f73; /* Azul oscuro */
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cce4ed; /* Azul claro */
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #f7fbfc;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #0077b6; /* Resaltado azul profesional */
+    outline: none;
+  }
+  
+  form input:disabled {
+    background-color: #e6eff3;
+  }
+  
+  form button {
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #005f73;
+  }
+  
+  form button:active {
+    background-color: #023e58;
+  }
+  
